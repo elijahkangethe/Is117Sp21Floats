@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Simple Floating Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+<body>
+<main id="float-examples">
+    <h1>Simple Floating Examples</h1>
+    <p class="sectionbreak"><em>The first three look the same.</em></p>
+
+
+    <article id="floatsample-1">    <!-- I'm nesting boxes together here -->
+        <aside class="column">
+            <div class="short warmcolor-1 boxnumber-inline">
+                <p class="boxnumber">1</p>
+                <p>We (1 and 3) are nested together.</p>
+            </div>
+            <div class="short coolcolor-2">
+                <p><span class="boxnumber">3</span><br>We (1 and 3) are nested together.</p>
+            </div>
+        </aside>
+
+        <aside class="column">
+            <div class="short coolcolor-1">
+                <p><span class="boxnumber">2</span><br>We (2 and 4) are nested together.</p>
+            </div>
+            <div class="short warmcolor-2 boxnumber-inline">
+                <p class="boxnumber">4</p>
+                <p>We (2 and 4) are nested together.</p>
+            </div>
+        </aside>
+    </article>
+
+    <ul>
+        <li><em> (#floatsample-2)?</em></li>
+        <li><em> #floatsample-2 div float right?</em></li>
+
+    </ul>
+    <article id="floatsample-2">
+        <div class="column short warmcolor-1 boxnumber-inline">
+            <p class="boxnumber">1</p>
+            <p>Constrained.</p>
+        </div>
+        <div class="column short coolcolor-1">
+            <p><span class="boxnumber">2</span><br>Constrained.</p>
+        </div>
+        <div class="column short coolcolor-2">
+            <p><span class="boxnumber">3</span><br>Constrained.</p>
+        </div>
+        <div class="column short warmcolor-2 boxnumber-inline">
+            <p class="boxnumber">4</p>
+            <p>We are feeling constrained.</p>
+        </div>
+    </article>
+
+    <ul>
+        <li><em>Remove the clear on #block3?</em></li>
+    </ul>
+    <article id="floatsample-3">
+        <div class="column short warmcolor-1 boxnumber-inline">
+            <p class="boxnumber">1</p>
+            <p>Box 3 is clear.</p>
+        </div>
+        <div class="column short coolcolor-1">
+            <p><span class="boxnumber">2</span><br>Box 3 is clear.</p>
+        </div>
+        <div class="column short coolcolor-2" id="block3">
+            <p><span class="boxnumber">3</span><br>Box 3 is clear.</p>
+        </div>
+        <div class="column short warmcolor-2 boxnumber-inline">
+            <p class="boxnumber">4</p>
+            <p>Box 3 is staying clear.</p>
+        </div>
+    </article>
+
+
+    <ul>
+        <li><em>Try applying clear to #floatsample-4 #block4.</em></li>
+        <li><em>Apply clear to #floatsample-4 #block2?</em></li>
+    </ul>
+    <article id="floatsample-4">
+        <aside class="column">
+            <div class="short warmcolor-1">
+                <p><span class="boxnumber">1</span><br>Stack up?</p>
+            </div>
+            <div class="short coolcolor-1" id="block2">
+                <p><span class="boxnumber">2</span><br>Stack up</p>
+            </div>
+        </aside>
+        <aside class="column">
+            <div class="tall coolcolor-2">
+                <p><span class="boxnumber">3</span><br>Stack up</p>
+            </div>
+        </aside>
+        <div class="warmcolor-2" id="block4">
+            <p><span class="boxnumber">4</span><br> Not floating</p>
+        </div>
+    </article>
+</main>
+</body>
+</html>

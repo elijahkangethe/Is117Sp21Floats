@@ -1,0 +1,135 @@
+/*------------------  General Styles  ------------------*/
+body {
+    margin: 2.5%;
+    background-color: #E4DFDA;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 16px;
+}
+
+main {
+    text-align: center;
+}
+
+article {
+    overflow: auto;  /* notice where does the margin go if you remove this; with floating elements inside, this collapses */
+    clear: both;
+    margin: 48px 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 32px;
+}
+
+ul {
+    list-style-position: inside;
+}
+ul li {
+    padding-bottom: 10px;
+}
+
+p {
+    margin: 0;  /* the browser likes to apply styles to some elements, like margin to p tags; we'll show you how to find these soon, but for now I'm overriding any browser styles by using margin 0 */
+    padding: 18px 0;
+}
+
+.sectionbreak {
+    margin-top: 80px;
+    padding-top: 80px;
+    border-top: 10px dotted #aaaaaa;
+}
+
+/*------------------ My Styles  ------------------*/
+.tall {
+    width: 250px;
+    height: 500px;
+}
+
+.short {
+    width: 250px;
+    height: 250px;
+}
+
+.short p {
+    padding: 60px 25px;  /* notice I am applying the padding to the element inside the div, trying applying it to the div (just .short) instead and see what happens */
+}
+.tall p {
+    padding: 200px 25px;
+}
+
+.boxnumber {
+    font-family: 'Righteous', cursive;
+    font-size: 48px;
+}
+
+.boxnumber-inline p {
+    padding: 0;  /* if I don't want to use the break tag after my box number (like with the 1's and 4's), I need to adjust the padding by overriding padding coming from ".short p" above and applying it somewhere else */
+}
+
+.boxnumber-inline .boxnumber {
+    padding: 60px 0 0;
+}
+
+/*------------------  Floating  ------------------*/
+#floatsample-1 .column {
+    float: left;
+}
+
+/*TRY APPLYING FLOAT RIGHT TO SEE WHAT HAPPENS*/
+#floatsample-2 div,
+#floatsample-3 div{
+    float: left;
+}
+
+/*TRY COMMENTING OUT THIS WIDTH TO SEE WHAT HAPPENS*/
+#floatsample-2 {
+    width: 500px;
+}
+
+/*TRY COMMENTING OUT THIS CLEAR TO SEE WHAT HAPPENS*/
+#floatsample-3 #block3 {
+    clear: left;
+}
+
+/*TRY APPLYING CLEAR (CURRENTLY COMMENTED OUT) TO SEE WHAT HAPPENS*/
+#floatsample-4 #block4 {
+    /*clear: left;*/
+}
+
+/*TRY FLOATING #floatsample-4 div INSTEAD OF #floatsample-4 .column TO SEE WHAT HAPPENS*/
+#floatsample-4 .column {
+    float: left;
+}
+
+/*TRY APPLYING CLEAR (CURRENTLY COMMENTED OUT) TO SEE WHAT HAPPENS*/
+#floatsample-4 #block2 {
+    /*clear: left;*/
+}
+
+/*------------------  Backgrounds and Breaks  ------------------*/
+.warmcolor-1 {
+    background: deeppink;
+}
+.warmcolor-2 {
+    background: orange;
+}
+.coolcolor-1 {
+    background: green;
+}
+.coolcolor-2 {
+    background: blue;
+}
+
+#floatsample-4 .warmcolor-1 {
+    background: orangered;
+}
+#floatsample-4 .warmcolor-2 {
+    background: lightpink;
+}
+#floatsample-4 .coolcolor-1 {
+    background: mediumpurple;
+}
+#floatsample-4 .coolcolor-2 {
+    background: skyblue;
+}
